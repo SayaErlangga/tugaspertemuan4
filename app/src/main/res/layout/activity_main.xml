@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/header_phone"
+        layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_phone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineVertical"
+            app:layout_constraintGuide_percent="0.5"
+            android:orientation="vertical"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineHorizontal"
+            app:layout_constraintGuide_percent="0.23"
+            android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineHorizonta3"
+            app:layout_constraintGuide_percent="0.4"
+            android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHorizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:text="Hi Erlangga,"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/name_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/name_title"
+            app:srcCompat="@drawable/baseline_notifications_none_24" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,600.00"
+            android:textSize="96px"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal2"
+            app:layout_constraintStart_toStartOf="@+id/name_title" />
+
+        <LinearLayout
+            android:id="@+id/first_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Money"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40px"
+                android:layout_marginBottom="5sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Wallet, bank or mobile number"
+                android:textColor="@color/white"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
+            app:layout_constraintEnd_toEndOf="@+id/notification_icon"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Money"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                android:layout_marginBottom="5sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request money from Cowry Loans"
+                android:textColor="@color/white"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizonta3"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintStart_toStartOf="@+id/first_layout"
+            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Bill"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40px"
+                android:layout_marginBottom="5sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zero transactions fees when your pay"
+                android:textColor="@color/white"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizonta3"
+            app:layout_constraintEnd_toEndOf="@+id/second_layout"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Airtime"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40px"
+                android:layout_marginBottom="5sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top-up or send airtime across Countries"
+                android:textColor="@color/white"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Matahari selalu menerangi separuh Bulan sementara separuh lainnya tetap gelap, tetapi seberapa banyak yang dapat kita lihat dari separuh yang diterangi itu berubah saat Bulan bergerak di orbitnya.\nHal ini yang menyebabkan Bulan tampak berbeda-beda dari Bumi.  Dikutip dari situs Badan Penerbangan dan Antariksa Amerika Serikat (NASA), bentuk sabit terjadi pada dua fase. Yakni setelah bulan baru menuju perbani awal (waxing crescent), seperti yang saat ini berlangsung, dan sabit akhir jelang bulan baru (waning crescent).  \nDikutip dari akun Instagram Badan Riset dan Inovasi Nasional (BRIN), bulan sabit awal terjadi ketika kurang dari separuh permukaan Bulan yang menghadap Bumi memantulkan cahaya Matahari.  \nBaca artikel CNN Indonesia &quot;Kenapa Bulan Bisa Berbentuk Sabit?&quot; selengkapnya di sini: https://www.cnnindonesia.com/teknologi/20230525152235-199-953996/kenapa-bulan-bisa-berbentuk-sabit.  Download Apps CNN Indonesia sekarang https://app.cnnindonesia.com/ \nMatahari selalu menerangi separuh Bulan sementara separuh lainnya tetap gelap, tetapi seberapa banyak yang dapat kita lihat dari separuh yang diterangi itu berubah saat Bulan bergerak di orbitnya.\nHal ini yang menyebabkan Bulan tampak berbeda-beda dari Bumi.  Dikutip dari situs Badan Penerbangan dan Antariksa Amerika Serikat (NASA), bentuk sabit terjadi pada dua fase. Yakni setelah bulan baru menuju perbani awal (waxing crescent), seperti yang saat ini berlangsung, dan sabit akhir jelang bulan baru (waning crescent).  \nDikutip dari akun Instagram Badan Riset dan Inovasi Nasional (BRIN), bulan sabit awal terjadi ketika kurang dari separuh permukaan Bulan yang menghadap Bumi memantulkan cahaya Matahari.  \nBaca artikel CNN Indonesia &quot;Kenapa Bulan Bisa Berbentuk Sabit?&quot; selengkapnya di sini: https://www.cnnindonesia.com/teknologi/20230525152235-199-953996/kenapa-bulan-bisa-berbentuk-sabit.  Download Apps CNN Indonesia sekarang https://app.cnnindonesia.com/"
+            app:layout_constraintTop_toBottomOf="@id/third_layout"
+            tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer_layout"
+        layout="@layout/footer_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
