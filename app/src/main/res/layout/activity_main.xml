@@ -93,21 +93,23 @@
             app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
             android:gravity="center_vertical"
             android:padding="10dp"
-            android:background="@color/black">
+            android:background="#D6D3F3">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
                 android:text="Pay Money"
-                android:textColor="@color/white"
-                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="40px"
-                android:layout_marginBottom="5sp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="To Wallet, bank or mobile number"
-                android:textColor="@color/white"
-                android:textSize="32px"/>
+                android:textColor="@color/black"
+                android:textSize="32px" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,21 +127,23 @@
             app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
             android:gravity="center_vertical"
             android:padding="10dp"
-            android:background="@color/black">
+            android:background="#E6F1CF">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
                 android:text="Request Money"
-                android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="40px"
-                android:layout_marginBottom="5sp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Request money from Cowry Loans"
-                android:textColor="@color/white"
-                android:textSize="32px"/>
+                android:textColor="@color/black"
+                android:textSize="32px" />
         </LinearLayout>
 
         <LinearLayout
@@ -157,62 +161,69 @@
             app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
             android:gravity="center_vertical"
             android:padding="10dp"
-            android:background="@color/black">
+            android:background="#F3F9F4">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
                 android:text="Pay Bill"
-                android:textColor="@color/white"
-                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="40px"
-                android:layout_marginBottom="5sp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Zero transactions fees when your pay"
-                android:textColor="@color/white"
-                android:textSize="32px"/>
+                android:textColor="@color/black"
+                android:textSize="32px" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical"
-            tools:ignore="MissingConstraints"
-            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizonta3"
-            app:layout_constraintEnd_toEndOf="@+id/second_layout"
-            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
-            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp"
-            android:background="@color/black">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Buy Airtime"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="40px"
-                android:layout_marginBottom="5sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Top-up or send airtime across Countries"
-                android:textColor="@color/white"
-                android:textSize="32px"/>
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FCEFC7"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/guidelineHorizonta3"
+                app:layout_constraintEnd_toEndOf="@+id/second_layout"
+                app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+                app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
+                tools:ignore="MissingConstraints">
 
-        <TextView
-            android:layout_marginTop="20sp"
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Matahari selalu menerangi separuh Bulan sementara separuh lainnya tetap gelap, tetapi seberapa banyak yang dapat kita lihat dari separuh yang diterangi itu berubah saat Bulan bergerak di orbitnya.\nHal ini yang menyebabkan Bulan tampak berbeda-beda dari Bumi.  Dikutip dari situs Badan Penerbangan dan Antariksa Amerika Serikat (NASA), bentuk sabit terjadi pada dua fase. Yakni setelah bulan baru menuju perbani awal (waxing crescent), seperti yang saat ini berlangsung, dan sabit akhir jelang bulan baru (waning crescent).  \nDikutip dari akun Instagram Badan Riset dan Inovasi Nasional (BRIN), bulan sabit awal terjadi ketika kurang dari separuh permukaan Bulan yang menghadap Bumi memantulkan cahaya Matahari.  \nBaca artikel CNN Indonesia &quot;Kenapa Bulan Bisa Berbentuk Sabit?&quot; selengkapnya di sini: https://www.cnnindonesia.com/teknologi/20230525152235-199-953996/kenapa-bulan-bisa-berbentuk-sabit.  Download Apps CNN Indonesia sekarang https://app.cnnindonesia.com/ \nMatahari selalu menerangi separuh Bulan sementara separuh lainnya tetap gelap, tetapi seberapa banyak yang dapat kita lihat dari separuh yang diterangi itu berubah saat Bulan bergerak di orbitnya.\nHal ini yang menyebabkan Bulan tampak berbeda-beda dari Bumi.  Dikutip dari situs Badan Penerbangan dan Antariksa Amerika Serikat (NASA), bentuk sabit terjadi pada dua fase. Yakni setelah bulan baru menuju perbani awal (waxing crescent), seperti yang saat ini berlangsung, dan sabit akhir jelang bulan baru (waning crescent).  \nDikutip dari akun Instagram Badan Riset dan Inovasi Nasional (BRIN), bulan sabit awal terjadi ketika kurang dari separuh permukaan Bulan yang menghadap Bumi memantulkan cahaya Matahari.  \nBaca artikel CNN Indonesia &quot;Kenapa Bulan Bisa Berbentuk Sabit?&quot; selengkapnya di sini: https://www.cnnindonesia.com/teknologi/20230525152235-199-953996/kenapa-bulan-bisa-berbentuk-sabit.  Download Apps CNN Indonesia sekarang https://app.cnnindonesia.com/"
-            app:layout_constraintTop_toBottomOf="@id/third_layout"
-            tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="Buy Airtime"
+                    android:textColor="@color/black"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top-up or send airtime across Countries"
+                    android:textColor="@color/black"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="@+id/third_layout"
+                app:layout_constraintTop_toBottomOf="@id/third_layout"
+                android:text="Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut. Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut. Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut.Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut. Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut. Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut.Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut. Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut. Kita dapat menggunakan aplikasi ini untuk melakukan pembayaran uang ke dompet, bank atau nomor telepon, untuk meminta uang dari cowry loands, untuk membayar tagihan dan 0 pajak, dan untuk membeli airtime, dengan aplikasi ini kita tidak perlu lagi keluar untuk melakukan aktivitas tersebut."
+                tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

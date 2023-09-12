@@ -17,19 +17,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_accessibility_24" />
+            android:src="@drawable/baseline_account_balance_wallet_24" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:src="@drawable/baseline_accessibility_24" />
+            android:src="@drawable/baseline_account_circle_24" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/baseline_accessibility_24" />
+            android:src="@drawable/baseline_menu_24" />
 
     </RelativeLayout>
 
